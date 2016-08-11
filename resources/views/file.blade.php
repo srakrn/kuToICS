@@ -18,8 +18,8 @@ END:STANDARD
 END:VTIMEZONE
 @foreach($json as $subject)
 BEGIN:VEVENT
-DTSTART;TZID=Asia/Bangkok:20160808T{{$subject->start}}
-DTEND;TZID=Asia/Bangkok:20160808T{{$subject->end}}
+DTSTART;TZID=Asia/Bangkok:{$subject->beginningDate}}T{{$subject->start}}
+DTEND;TZID=Asia/Bangkok:{$subject->beginningDate}}T{{$subject->end}}
 RRULE:FREQ=WEEKLY;UNTIL=20161219T040000Z;BYDAY={{$subject->dateCode}}
 DTSTAMP:20160811T053350Z
 UID:{{$subject->UID}}

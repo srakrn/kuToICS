@@ -80,7 +80,33 @@ class logicController extends Controller
               $dateCode = "SA";
               break;
           }
+
+          switch($subject->date){
+            case "1":
+              $beginningDate = "20160814";
+              break;
+            case "2":
+              $beginningDate = "20160808";
+              break;
+            case "3":
+              $beginningDate = "20160809";
+              break;
+            case "4":
+              $beginningDate = "20160810";
+              break;
+            case "5":
+              $beginningDate = "20160811";
+              break;
+            case "6":
+              $beginningDate = "20160812";
+              break;
+            case "7":
+              $beginningDate = "20160813";
+              break;
+          }
+          
           $subject->dateCode = $dateCode;
+          $subject->beginningDate = $beginningDate;
           $subject->locations = trim($subject->locations);
           $init = $subject->start;
           $term = $subject->end;
