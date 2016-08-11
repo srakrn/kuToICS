@@ -31,7 +31,7 @@
       <div class="form-group">
         <div class="checkbox">
           <label>
-            <input type="checkbox" name="noClassID"> ไม่ต้องการรหัสวิชา
+            <input type="checkbox" name="noClassID"> Hide the class ID (01XXXXXX) from the event name
           </label>
         </div>
       </div>
