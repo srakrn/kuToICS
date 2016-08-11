@@ -134,7 +134,7 @@ class logicController extends Controller
   {
     foreach($array as $subject)
     {
-      $subject->title = substr($subject->title,9,-1);
+      $subject->title = substr($subject->title,9,(strlen($subject->title)-9));
     }
     return $array;
   }
