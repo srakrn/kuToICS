@@ -28,6 +28,13 @@
         <label for="exampleInputEmail1">Paste your source code here</label>
         <textarea name="sourcecode" class="form-control"></textarea>
       </div>
+      <div class="form-group">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="noClassID"> ไม่ต้องการรหัสวิชา
+          </label>
+        </div>
+      </div>
       <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
       <button type="submit" class="btn btn-primary">Generate!</button>
     </form>

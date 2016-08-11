@@ -17,7 +17,10 @@ class pagesController extends Controller
     {
       $logic = new logicController();
       $json = $logic->toReadableJSON($logic->generateJSON($request->sourcecode));
-
+      if($request->noClassID==true)
+      {
+        $json = $logic->removeSubjectCode($json);
+      }
       return response(view('file')->with(compact('json')))->header('Content-Type', "text/calendar");
     }
 }

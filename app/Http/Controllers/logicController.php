@@ -104,7 +104,7 @@ class logicController extends Controller
               $beginningDate = "20160813";
               break;
           }
-          
+
           $subject->dateCode = $dateCode;
           $subject->beginningDate = $beginningDate;
           $subject->locations = trim($subject->locations);
@@ -128,5 +128,14 @@ class logicController extends Controller
         next($json);
     }
     return $subjectList;
+  }
+
+  public function removeSubjectCode($array)
+  {
+    foreach($array as $subject)
+    {
+      $subject->title = substr($subject->title,9,-1);
+    }
+    return $array;
   }
 }
