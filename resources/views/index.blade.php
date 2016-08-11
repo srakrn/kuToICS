@@ -29,7 +29,7 @@
         <textarea name="sourcecode" class="form-control"></textarea>
       </div>
       <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary btn-disabled">A bug was found, sorry for the inconvenience.</button>
     </form>
   </div>
 </body>
