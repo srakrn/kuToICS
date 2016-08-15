@@ -23,21 +23,28 @@
       </h1>
       <p>Copy the source code of <a href="https://std.regis.ku.ac.th/_Student_RptKu.php?mode=TIME_TABLE2">the timetable page</a>, and paste below, in order to generate the ICS file.</p>
     </div>
-    <form method="POST" action="/file">
-      <div class="form-group">
-        <label for="exampleInputEmail1">Paste your source code here</label>
-        <textarea name="sourcecode" class="form-control"></textarea>
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <form method="POST" action="/file">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Paste your source code here</label>
+            <textarea name="sourcecode" class="form-control" rows="10"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="noClassID"> Hide the class ID (01XXXXXX) from the event name
+              </label>
+            </div>
+          </div>
+          <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+          <button type="submit" class="btn btn-primary">Generate!</button>
+        </form>
       </div>
-      <div class="form-group">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" name="noClassID"> Hide the class ID (01XXXXXX) from the event name
-          </label>
-        </div>
+      <div class="col-sm-12 col-md-6">
+        <img src="/guide.png" width="100%"></img>
       </div>
-      <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
-      <button type="submit" class="btn btn-primary">Generate!</button>
-    </form>
+    </div>
   </div>
 </body>
 </html>
