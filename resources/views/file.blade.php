@@ -20,7 +20,7 @@ END:VTIMEZONE
 BEGIN:VEVENT
 DTSTART;TZID=Asia/Bangkok:{{$subject->beginningDate}}T{{$subject->start}}
 DTEND;TZID=Asia/Bangkok:{{$subject->beginningDate}}T{{$subject->end}}
-RRULE:FREQ=WEEKLY;UNTIL=20161209T040000Z;BYDAY={{$subject->dateCode}}
+RRULE:FREQ=WEEKLY;UNTIL=20170512T040000Z;BYDAY={{$subject->dateCode}}
 DTSTAMP:20160811T053350Z
 UID:{{$subject->UID}}
 DESCRIPTION:
