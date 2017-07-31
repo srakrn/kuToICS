@@ -1,5 +1,6 @@
 # kuToICS
-Convert Kasetsart University's timetable to ICS file
+Convert Kasetsart University's timetable to ICS file.
+Run this app at [https://kutoics.herokuapp.com].
 
 # Usage
 Simply copy the source code from [https://std.regis.ku.ac.th/_Student_RptKu.php?mode=TIME_TABLE2](https://std.regis.ku.ac.th/_Student_RptKu.php?mode=TIME_TABLE2), and paste in the box
