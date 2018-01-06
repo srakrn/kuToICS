@@ -83,25 +83,25 @@ class logicController extends Controller
 
           switch($subject->date){
             case "2":
-              $beginningDate = "20170731";
+              $beginningDate = "20180108";
               break;
             case "3":
-              $beginningDate = "20170801";
+              $beginningDate = "20180109";
               break;
             case "4":
-              $beginningDate = "20170802";
+              $beginningDate = "20180110";
               break;
             case "5":
-              $beginningDate = "20170803";
+              $beginningDate = "20180111";
               break;
             case "6":
-              $beginningDate = "20170804";
+              $beginningDate = "20180112";
               break;
             case "7":
-              $beginningDate = "20170805";
+              $beginningDate = "20180113";
               break;
             case "1":
-              $beginningDate = "20170730";
+              $beginningDate = "20180114";
               break;
           }
 
