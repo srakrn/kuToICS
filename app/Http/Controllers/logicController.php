@@ -7,6 +7,10 @@ use App\Http\Requests;
 
 class logicController extends Controller
 {
+  public function extractName($data)
+  {
+    $array = explode("\n", $data);
+  }
   public function generateJSON($data)
   {
     $array = explode("\n", $data);

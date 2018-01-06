@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\logicController;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use View;
+use Storage;
 use App\Http\Requests;
 
 class pagesController extends Controller
@@ -15,12 +18,16 @@ class pagesController extends Controller
     }
     public function file(Request $request)
     {
-      $logic = new logicController();
-      $json = $logic->toReadableJSON($logic->generateJSON($request->sourcecode));
-      if($request->noClassID==true)
-      {
-        $json = $logic->removeSubjectCode($json);
-      }
-      return response(view('file')->with(compact('json')))->header('Content-Type', "text/calendar");
+		$logic = new logiccontroller();
+		$json = $logic->toreadablejson($logic->generatejson($request->sourcecode));
+		if($request->noclassid==true)
+		{
+			$json = $logic->removesubjectcode($json);
+		}
+		$processed_ics = (string) view::make('file', compact('json'));
+		Storage::disk('local')->put('timetable.ics', $processed_ics);
+		return response()->download(storage_path('app/timetable.ics'));
+		// return $processed_ics;
+		// return response(view('file')->with(compact('json')))->header('content-type', "text/calendar");
     }
 }

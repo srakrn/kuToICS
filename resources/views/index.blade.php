@@ -22,7 +22,7 @@
         Kasetsart U. ICS File Generator
       </h1>
       <h2>
-        First semester, academic year 2017
+        Second semester, academic year 2017
       </h2>
       <p>Copy the source code of <a href="https://std.regis.ku.ac.th/_Student_RptKu.php?mode=TIME_TABLE2">the timetable page</a>, and paste below, in order to generate the ICS file.</p>
     </div>
