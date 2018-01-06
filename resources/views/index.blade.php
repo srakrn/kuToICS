@@ -54,6 +54,12 @@
 		</ul>
         <!--<img src="/guide.png" width="100%"></img>-->
       </div>
+	</div>
+	<div class="row">
+	  <div class="col-lg-12">
+		<hr>
+		<p>จัดทำโดย <a href="https://srakrn.me/bio/">@srakrn</a> | ถ้า KUtoICS ช่วยให้งานของคุณน้อยลง <a href="https://paypal.me/srakrn">ลองซื้อชาให้ศิระกรสักแก้ว</a></p>
+	  </div>
     </div>
   </div>
 </body>
