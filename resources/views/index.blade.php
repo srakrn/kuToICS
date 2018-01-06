@@ -19,33 +19,40 @@
   <div class="container">
     <div class="jumbotron">
       <h1>
-        Kasetsart U. ICS File Generator
+		สร้างไฟล์ปฏิทินตารางเรียน มก.
       </h1>
       <h2>
-        Second semester, academic year 2017
+		ภาคเรียนที่สอง ปีการศึกษา 2560
       </h2>
-      <p>Copy the source code of <a href="https://std.regis.ku.ac.th/_Student_RptKu.php?mode=TIME_TABLE2">the timetable page</a>, and paste below, in order to generate the ICS file.</p>
+      <!--<p>Copy the source code of <a href="https://std.regis.ku.ac.th/_Student_RptKu.php?mode=TIME_TABLE2">the timetable page</a>, and paste below, in order to generate the ICS file.</p>-->
     </div>
     <div class="row">
       <div class="col-sm-12 col-md-6">
         <form method="POST" action="/file">
           <div class="form-group">
-            <label for="exampleInputEmail1">Paste your source code here</label>
+            <label for="exampleInputEmail1">แปะซอร์สโค้ดจากหน้า<a href="https://std.regis.ku.ac.th/_Student_RptKu.php?mode=TIME_TABLE2">ตารางเรียน</a>ของระบบ</label>
             <textarea name="sourcecode" class="form-control" rows="10"></textarea>
           </div>
           <div class="form-group">
             <div class="checkbox">
               <label>
-                <input type="checkbox" name="noClassID"> Hide the class ID (01XXXXXX) from the event name
+                <input type="checkbox" name="noClassID"> ซ่อนรหัสวิชา (01xxxxxx) จากชื่อวิชา
               </label>
             </div>
           </div>
           <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
-          <button type="submit" class="btn btn-primary">Generate!</button>
+          <button type="submit" class="btn btn-primary">สร้างตารางเรียน</button>
         </form>
       </div>
       <div class="col-sm-12 col-md-6">
-        <img src="/guide.png" width="100%"></img>
+		<h3>วิธีการใช้งานโดยคร่าว</h3>
+		<p>คัดลอกโค้ด HTML จากหน้า<a href="https://std.regis.ku.ac.th/_Student_RptKu.php?mode=TIME_TABLE2">ตารางเรียน</a>ของระบบ regis.ku.ac.th แล้วแปะในช่องด้านข้าง ระบบจะสร้างไฟล์นามสกุล .ics มาให้</p>
+		<p>หลังจากนั้น นำเข้าไฟล์ปฏิทินสู่บริการปฏิทินออนไลน์ตามคำแนะนำของผู้ให้บริการ</p>
+		<ul>
+		  <li>สำหรับ Calendar บนแมค double-click ไฟล์ได้ทันที</li>
+		  <li>สำหรับ Google calendar <a href="https://support.google.com/calendar/answer/37118?hl=en">โปรดศึกษาจาก Google Support</a></li>
+		</ul>
+        <!--<img src="/guide.png" width="100%"></img>-->
       </div>
     </div>
   </div>
