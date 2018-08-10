@@ -22,7 +22,7 @@
 		สร้างไฟล์ปฏิทินตารางเรียน มก.
       </h1>
       <h2>
-		ภาคเรียนที่สอง ปีการศึกษา 2560
+		ภาคต้น ปีการศึกษา 2561
       </h2>
       <!--<p>Copy the source code of <a href="https://std.regis.ku.ac.th/_Student_RptKu.php?mode=TIME_TABLE2">the timetable page</a>, and paste below, in order to generate the ICS file.</p>-->
     </div>
